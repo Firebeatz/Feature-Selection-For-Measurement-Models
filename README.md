@@ -16,6 +16,7 @@ The code is divided in 5 main sections. Sections 2, 3 and 4 contain functions wh
 
 **Section 1: Required Libraries**
 This Section contains all packages that will be used to perform the calculation of the FS method.
+
 **Section 2: Global Variables**
 This Section defines global variables that are important throughout the code. 
 These variables have to be changed before execution. 
@@ -24,9 +25,10 @@ These variables have to be changed before execution.
 2. `files`: vector of strings containing the name(s) of desired datasets (without .csv datatype ending)
 3. `iter`: int to specify the desired number of iterations/repetitions of one FS method on one dataset
 4. `response`: string holding the name of the target variable/response variable in the datasets
-5. `resultCon &lt;- list()`: creation of a container object to store all calculated results in
+5. `resultCon <- list()`: creation of a container object to store all calculated results in
 
 After these variables have been updated, the code is ready to run.
+
 **Section 3: Auxiliary Functions**
 This Section defines all auxiliary functions that are used to calculate the goodness of an FS method and to return the results for all FS methods in a standardized data frame. They include the following functions:
 
