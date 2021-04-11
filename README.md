@@ -15,9 +15,11 @@ The goal of the FS method implementations is to unify the application of differe
 The code is divided in 5 main sections. Sections 2, 3 and 4 contain functions whose parameters can be used to alter the behavior of the FS methods. In the following, all sections will be explained more thoroughly:
 
 **Section 1: Required Libraries**
+
 This Section contains all packages that will be used to perform the calculation of the FS method.
 
 **Section 2: Global Variables**
+
 This Section defines global variables that are important throughout the code. 
 These variables have to be changed before execution. 
 
@@ -30,6 +32,7 @@ These variables have to be changed before execution.
 After these variables have been updated, the code is ready to run.
 
 **Section 3: Auxiliary Functions**
+
 This Section defines all auxiliary functions that are used to calculate the goodness of an FS method and to return the results for all FS methods in a standardized data frame. They include the following functions:
 
 1. `getDummifiedData`: reads dataset-file from .csv and transforms categorial values into dummy variables
@@ -42,9 +45,12 @@ This Section defines all auxiliary functions that are used to calculate the good
 8. `FSCalculation` (actual function name might differ): This function holds the core function that is used to perform the feature selection. Also, it ensures that the results comply with the standardized result format. All relevant parameters that affect the performance of the FS method are contained in this function 
 
 **Section 4: Code Execution (main)**
+
 This Section is the main code and manages the execution order of the necessary auxiliary functions. It consists of two nested for-loops that run the FS method on multiple specified dataset for a specified number of repetitions and ensures a standardized output of the results.
+
 **Section 5: Result Output**
-This section returns all relevant results that were calculated. `resultCon` is a result container that contains all calculations, `results` and `stabilityInd` return more formatted information about selected features, *Suc* measures and stability measures
+
+This section returns all relevant results that were calculated. `resultCon` is a result container that contains all calculations, `results` and `stabilityInd` return more formatted information about selected features, *Suc* measures and stability measures.
 
 ## 4. Sources
 The modelling process necessary for all wrapper and embedded FS approaches is supported by functions from the caret package (Kuhn, M. (2020): caret. Classification and Regression Training. R package version 6.0-86). The interaction of learning function and search function in wrapper approaches is performed by the FSinR package from Aragón-Royón, F.; Jiménez-Vílchez, A.; Arauzo-Azofra, A.; Benitez, J. (2020).
