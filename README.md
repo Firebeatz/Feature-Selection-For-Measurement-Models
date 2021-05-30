@@ -38,11 +38,12 @@ This Section defines all auxiliary functions that are used to calculate the good
 1. `getDummifiedData`: reads dataset-file from .csv and transforms categorial values into dummy variables
 2. `getRelevanceInfo`: returns a list object that contains the names of all relevant and all irrelevant variables of a dataset. Relevant variables are those that are used in the formula to calculate the measure in column „Response“. Note that this formula is only valid for the attached datasets and might be changed for other datasets.
 3. `partData`: separates dataset into one training set and one testset (usually 70/30 split) using caret‘s createDataPartition
-4. `DeDummifyResults`: some FS methods require the definition of dummy variables, meaning that some factor variables are split in multiple dummy variables. This function merges all dummy variables of a factor variables back together such that the entire factor variable is labeled 'relevant' if one of the respective dummy variables has been labeled 'relevant'. This results in a better interpretation of results.  (Example: V06_one = 0, V06_two = 0, V06_three = 1 -&gt; V06 = 1)
-5. `Suc`: Implementation of Success-Measure _Suc_ according to [BOLO-13]
-6. `calcStability`: Implementation of Stability-Measures according to [NOGU-18]
-7. `selectThreshold`: some FS methods require the definition of a threshold. For values above that specified threshold, a feature is considered 'relevant', otherwise it is considerered 'irrelevant'. This function defines that threshold and translates the calculated values in a binary dataframe with relevant (1) and irrelevant (0) features
-8. `FSCalculation` (actual function name might differ): This function holds the core function that is used to perform the feature selection. Also, it ensures that the results comply with the standardized result format. All relevant parameters that affect the performance of the FS method are contained in this function 
+4. `preProc` : normalizes data in the range of [0,1]
+5. `DeDummifyResults`: some FS methods require the definition of dummy variables, meaning that some factor variables are split in multiple dummy variables. This function merges all dummy variables of a factor variables back together such that the entire factor variable is labeled 'relevant' if one of the respective dummy variables has been labeled 'relevant'. This results in a better interpretation of results.  (Example: V06_one = 0, V06_two = 0, V06_three = 1 -&gt; V06 = 1)
+6. `Suc`: Implementation of Success-Measure _Suc_ according to [BOLO-13]
+7. `calcStability`: Implementation of Stability-Measures according to [NOGU-18]
+8. `selectThreshold`: some FS methods require the definition of a threshold. For values above that specified threshold, a feature is considered 'relevant', otherwise it is considerered 'irrelevant'. This function defines that threshold and translates the calculated values in a binary dataframe with relevant (1) and irrelevant (0) features
+9. `FSCalculation` (actual function name might differ): This function holds the core function that is used to perform the feature selection. Also, it ensures that the results comply with the standardized result format. All relevant parameters that affect the performance of the FS method are contained in this function 
 
 **Section 4: Code Execution (main)**
 
@@ -65,3 +66,6 @@ The respective FS core functions are provided by the following authors:
 7. ANN/Ant Colony Optimization wrapper: *Kuhn, M. (2020): caret. Classification and Regression Training. R package version 6.0-86*
 8. LASSO with glm (embedded): *Friedman, J.; Hastie, T.; Tibshirani, R. (2010): Regularization Paths for Generalized Linear Models via Coordinate Descent. Journal of Statistical Software, 33(1), 1-22.*
 9. RandomForest (embedded): *Liaw, A.; Wiener, M. (2002): Classification and Regression by randomForest. R News 2(3), 18--22.*
+
+[BOLO-13] Bolón-Canedo, V., Sánchez-Maroño, N. and Alonso-Betanzos, A. (2013), “A review of feature selection methods on synthetic data”, Knowledge and Information Systems, Vol. 34 No. 3, pp. 483–519.
+[NOGU-18] Nogueira, S., Sechidis, K. and Brown, G. (2018), “On the stability of feature selection algorithms”, Journal of Machine Learning Research, 2018, pp. 1–54
