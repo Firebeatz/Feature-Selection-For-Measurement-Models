@@ -68,4 +68,5 @@ The respective FS core functions are provided by the following authors:
 9. RandomForest (embedded): *Liaw, A.; Wiener, M. (2002): Classification and Regression by randomForest. R News 2(3), 18--22.*
 
 [BOLO-13] Bolón-Canedo, V., Sánchez-Maroño, N. and Alonso-Betanzos, A. (2013), “A review of feature selection methods on synthetic data”, Knowledge and Information Systems, Vol. 34 No. 3, pp. 483–519.
+
 [NOGU-18] Nogueira, S., Sechidis, K. and Brown, G. (2018), “On the stability of feature selection algorithms”, Journal of Machine Learning Research, 2018, pp. 1–54
