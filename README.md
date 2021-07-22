@@ -1,7 +1,12 @@
 # FS For Measurement Models
 
 This page includes the codes and datasets that were used to calculate the results reported in `tbd`
+This is the code and the data set necessary to reproduce our results from the article UFeature selection for measurement models in the International Journal for Quality and Reliability Management.
+The article is currently under review by the journal. 
 
+Authors: published after review
+
+Please cite this code or the data set as: BibTex added after publication
 ---
 
 ## 1. Requirements
