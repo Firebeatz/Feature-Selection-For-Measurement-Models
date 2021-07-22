@@ -78,7 +78,7 @@ The respective FS core functions are provided by the following authors:
 
 ## 5. License
 
-Copyright 2020 Simon Cramer, Meike Huber, Robert H. Schmitt - RWTH AACHEN UNIVERSITY
+Copyright 2021 (added after review)
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
