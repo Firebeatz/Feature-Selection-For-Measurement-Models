@@ -1,6 +1,6 @@
 # FS For Measurement Models
 
-This is the code and the data set necessary to reproduce our results from the article UFeature selection for measurement models in the International Journal for Quality and Reliability Management.
+This is the code and the data set necessary to reproduce our results from the article Feature selection for measurement models in the International Journal for Quality and Reliability Management.
 The article is currently under review by the journal. 
 
 Authors: published after review
