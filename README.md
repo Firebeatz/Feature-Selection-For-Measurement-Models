@@ -6,7 +6,8 @@ The article is currently under review by the journal.
 
 Authors: published after review
 
-Please cite this code or the data set as: BibTex added after publication
+Please cite this code or the data set as: BibTex will be added after publication
+
 ---
 
 ## 1. Requirements
